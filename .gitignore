@@ -1,0 +1,10 @@
+# Emacs
+.#*
+
+# Big binary files
+recordings/
+*.pdf
+*.djvu
+*.doc
+*.docx
+

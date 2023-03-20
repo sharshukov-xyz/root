@@ -1,0 +1,54 @@
+/*
+ * TODO:
+ *   - move theme, variables & markup in separate files
+ *   - use prefers-color-scheme (see https://css-tricks.com/dark-modes-with-css/)
+ *   - migrate from css to scss
+ */
+
+:root {
+  --background-color: #1c1c1c;
+  --text-color: white;
+  --border-color: white;
+
+  --link-color: lightblue;
+  --visited-link-color: lightpink;
+
+  --width-s: 600px;
+  --width-m: 768px;
+  --width-l: 992px;
+  --width-xl: 1200px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto";
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0 20%;
+  }
+}
+
+nav {
+  border-bottom: 2px solid var(--border-color);
+  padding: 5px;
+}
+
+nav a {
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+#title {
+  margin: auto;
+  text-align: center;
+
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+a, a:visited {
+  color: var(--link-color);
+}
